@@ -1,18 +1,35 @@
 /* app css stylesheet */
 
+* {
+  margin:0;
+  padding:0;
+}
+body {
+  color: black;
+  font-family: arial, sans-serif;
+}
+header {}
+nav {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;}
+article {}
+footer {border-top: 1px solid grey;}
+
+header, nav, article, footer {
+  margin:1em;
+  padding:1em;
+}
+
 .menu {
   list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
 }
 
 .menu:before {
-  content: "[";
+  /*content: "[";*/
 }
 
 .menu:after {
-  content: "]";
+  /*content: "]";*/
 }
 
 .menu > li {
@@ -20,11 +37,13 @@
 }
 
 .menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
+  /*content: "|";*/
+  /*padding-right: 0.3em;*/
 }
 
 .menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
+  /*content: "";*/
+  /*padding: 0;*/
 }
+
+.current {background: blue; color: white;}

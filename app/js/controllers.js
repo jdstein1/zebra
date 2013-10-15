@@ -3,9 +3,11 @@
 /* Controllers */
 
 angular.module('myApp.controllers', []).
-  controller('MyCtrl1', [function() {
+  controller('ctrlHome', [function() {
+  	console.log('START ctrlHome');
 
   }])
-  .controller('MyCtrl2', [function() {
+  .controller('ctrlAbout', [function() {
+  	console.log('START ctrlAbout');
 
   }]);
